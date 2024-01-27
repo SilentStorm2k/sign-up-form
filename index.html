@@ -51,14 +51,16 @@
                     </div>
                     <div class="form-column">
                         <label for="ph-number">Phone Number:</label>
-                        <input type="text" name="ph-number" id="ph-number" placeholder="1234567890"
-                            pattern="^(\d{10})$" title="Only 10 digit number allowed">
+                        <input type="text" name="ph-number" id="ph-number" placeholder="1234567890" pattern="^(\d{10})$"
+                            title="Only 10 digit number allowed">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-column">
                         <label for="password">Password: <span aria-label="required">*</span></label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" required
+                            title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                     </div>
                     <div class="form-column">
                         <label for="confirm-password">Confirm Password:<span aria-label="required">*</span></label>
