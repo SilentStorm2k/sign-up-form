@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <main>
+        <div class="left-panel">
+            <div class="hover-text">
+                <img src="assests/logo.png" alt="" class="logo">
+                <span>Website</span>
+            </div>
+            <p>
+                Photo by <a href="https://unsplash.com/@chris_kuzman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher Kuzman</a> on <a href="https://unsplash.com/photos/rock-formation-on-the-ocean-photography-2LhCDvS_7xs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                This is not a real online service! You knwo you need something like This in your life to help you realize your deepest dreams. Sign up now to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+            <form action="#" method="post">
+                <label for="first-name">First Name: <span aria-label="required">*</span></label>
+                <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                <label for="last-name">Last Name: <span aria-label="required">*</span></label>
+                <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                <label for="email">E-mail: <span aria-label="required">*</span></label>
+                <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+                <label for="ph-number">Phone Number:</label>
+                <input type="text" name="ph-number" id="ph-number" placeholder="1234567890">
+                <label for="password">Password: <span aria-label="required">*</span></label>
+                <input type="password" name="password" id="password" required>
+                <label for="confirm-password">Confirm Password:<span aria-label="required">*</span></label>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+                <button>Create account</button>
+                <div class="account-exists">
+                    Already have an account?
+                    <button type="button">Log in</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Copyright &#169; SilentStorm2k
+        <a href="https://github.com/SilentStorm2k">
+            <img src="assests/github-logo-light.png" alt="" class="git logo">
+        </a>
+    </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>
