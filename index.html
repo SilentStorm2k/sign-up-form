@@ -16,27 +16,54 @@
                 <span>Website</span>
             </div>
             <p>
-                Photo by <a href="https://unsplash.com/@chris_kuzman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher Kuzman</a> on <a href="https://unsplash.com/photos/rock-formation-on-the-ocean-photography-2LhCDvS_7xs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                Photo by <a
+                    href="https://unsplash.com/@chris_kuzman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher
+                    Kuzman</a> on <a
+                    href="https://unsplash.com/photos/rock-formation-on-the-ocean-photography-2LhCDvS_7xs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </p>
         </div>
         <div class="content">
             <p>
-                This is not a real online service! You knwo you need something like This in your life to help you realize your deepest dreams. Sign up now to get started.
+                This is not a real online service! You know you need something like This in your life to help you
+                realize your deepest dreams. Sign up now to get started.
             </p>
             <p>You <em>know</em> you want to.</p>
             <form action="#" method="post">
-                <label for="first-name">First Name: <span aria-label="required">*</span></label>
-                <input type="text" name="first-name" id="first-name" placeholder="John" required>
-                <label for="last-name">Last Name: <span aria-label="required">*</span></label>
-                <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
-                <label for="email">E-mail: <span aria-label="required">*</span></label>
-                <input type="email" name="email" id="email" placeholder="john@doe.com" required>
-                <label for="ph-number">Phone Number:</label>
-                <input type="text" name="ph-number" id="ph-number" placeholder="1234567890">
-                <label for="password">Password: <span aria-label="required">*</span></label>
-                <input type="password" name="password" id="password" required>
-                <label for="confirm-password">Confirm Password:<span aria-label="required">*</span></label>
-                <input type="password" name="confirm-password" id="confirm-password" required>
+                <h1>Sign up form</h1>
+                <p>
+                    Required fields are followed by
+                    <strong><span aria-label="required">*</span></strong>.
+                </p>
+                <div class="form-row">
+                    <div class="form-column">   
+                        <label for="first-name">First Name: <span aria-label="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">Last Name: <span aria-label="required">*</span></label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="email">E-mail: <span aria-label="required">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="ph-number">Phone Number:</label>
+                        <input type="text" name="ph-number" id="ph-number" placeholder="1234567890" pattern="^(\d{10})$">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="password">Password: <span aria-label="required">*</span></label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="confirm-password">Confirm Password:<span aria-label="required">*</span></label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div> 
+                </div>
                 <button>Create account</button>
                 <div class="account-exists">
                     Already have an account?
