@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css2?family=Sacramento);
+
+:root {
+    --lightest: #EEF5FF;
+    --light: #B4D4FF;
+    --dark: #86B6F6;
+    --darker: #176B87;
+}
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    border: 1px solid red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    background: var(--darker);
+}
+
+.git {
+    width: 2rem;
+}
