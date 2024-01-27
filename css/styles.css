@@ -50,7 +50,7 @@ main {
     background-color: #176B8760;
 }
 
-.left-panel > p {
+.left-panel>p {
     margin-top: auto;
     margin-bottom: 0;
 }
@@ -65,30 +65,30 @@ main {
     background: linear-gradient(to bottom, var(--darker), var(--lightest));
 }
 
-.content > p:first-child,
-.content > p:first-child + p, 
-.content > form,
-.content > button:first-of-type,
-.content > .account-exists {
+.content>p:first-child,
+.content>p:first-child+p,
+.content>form,
+.content>button:first-of-type,
+.content>.account-exists {
     left: 4%;
     right: 4%;
     bottom: 4%;
     overflow: auto;
 }
 
-.content > p:first-child {
+.content>p:first-child {
     position: absolute;
     top: 1%;
     left: 5%;
     right: 5%;
 }
 
-.content > p:first-child + p {
+.content>p:first-child+p {
     position: absolute;
     top: 15%;
 }
 
-.content > form {
+.content>form {
     position: absolute;
     top: 25%;
     bottom: 25%;
@@ -96,12 +96,12 @@ main {
     background-color: var(--light);
 }
 
-.content > button:first-of-type {
+.content>button:first-of-type {
     position: absolute;
     top: 80%;
 }
 
-.content > .account-exists {
+.content>.account-exists {
     position: absolute;
     top: 90%;
 }
@@ -137,16 +137,56 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  width: 150px;
-  height: 2rem;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  
+    font-family: inherit;
+    font-size: 100%;
+    width: 150px;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+button {
+    border-radius: 10rem;
+    color: #fff;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--dark);
+        border-radius: 10rem;
+        z-index: -2;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #fff;
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}
 
 footer {
     display: flex;
@@ -156,7 +196,7 @@ footer {
     background: var(--darker);
 }
 
-footer > a {
+footer>a {
     display: flex;
 }
 
@@ -169,12 +209,15 @@ footer > a {
     body {
         font-size: large;
     }
+
     main {
         flex-direction: column;
     }
+
     .left-panel {
         flex: 1;
     }
+
     .content {
         flex: 4;
         width: 100%;
