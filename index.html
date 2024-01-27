@@ -28,7 +28,7 @@
                 realize your deepest dreams. Sign up now to get started.
             </p>
             <p>You <em>know</em> you want to.</p>
-            <form action="#" method="post">
+            <form action="#" method="post" id="sign-up-form">
                 <h1>Sign up form</h1>
                 <p>
                     Required fields are followed by
@@ -52,7 +52,7 @@
                     <div class="form-column">
                         <label for="ph-number">Phone Number:</label>
                         <input type="text" name="ph-number" id="ph-number" placeholder="1234567890"
-                            pattern="^(\d{10})$">
+                            pattern="^(\d{10})$" title="Only 10 digit number allowed">
                     </div>
                 </div>
                 <div class="form-row">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </form>
-            <button>Create account</button>
+            <button type="submit" form="sign-up-form">Create account</button>
             <div class="account-exists">
                 Already have an account?
                 <button type="button">Log in</button>
