@@ -54,12 +54,96 @@ main {
     margin-bottom: 0;
 }
 
-.content {
-    width: 55%;
-}
-
 .logo {
     width: 2rem;
+}
+
+.content {
+    width: 55%;
+    position: relative;
+    background: linear-gradient(to bottom, var(--darker), var(--lightest));
+}
+
+.content > p:first-child,
+.content > p:first-child + p, 
+.content > form,
+.content > button:first-of-type,
+.content > .account-exists {
+    left: 4%;
+    right: 4%;
+    bottom: 4%;
+    overflow: auto;
+}
+
+.content > p:first-child {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    right: 5%;
+}
+
+.content > p:first-child + p {
+    position: absolute;
+    top: 20%;
+}
+
+.content > form {
+    position: absolute;
+    top: 30%;
+    bottom: 25%;
+    padding: 0 4% 4% 4%;
+    background-color: var(--light);
+}
+
+.content > button:first-of-type {
+    position: absolute;
+    top: 80%;
+}
+
+.content > .account-exists {
+    position: absolute;
+    top: 90%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20%;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+
+input:invalid {
+    border: 2px solid palevioletred;
+}
+
+input:valid {
+    border: 2px solid greenyellow;
+}
+
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 150px;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
 * {
@@ -81,4 +165,17 @@ footer > a {
 .git {
     width: 2rem;
     margin: 0.3rem 0;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+    .left-panel {
+        flex: 1;
+    }
+    .content {
+        flex: 4;
+        width: 100%;
+    }
 }
